@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ログイン画面</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/newLogin.css" />
+</head>
+<body>
+    <main class="main">
+        <h1 class="">Log in</h1>
+        <form action="/select" method="POST">
+            <div class="userName">
+                <input id="userName" name="userName" type="text" placeholder="userName" onfocus="this.placeholder=''"  onblur="this.placeholder='userName'" onmouseout="this.placeholder='userName'" />
+            </div>
+            <div class="passWord">
+                <input id="passWord" name="passWord" type="password" placeholder="passWord" onfocus="this.placeholder=''" onblur="this.placeholder='passWord'" onmouseout="this.placeholder='passWord'" />
+            </div>
+        
+        <div class="errlbl">
+            <label id="errlbl" hidden="hidden" > </label>
+            <label id="serverErrlbl" > <%= message %> </label>
+        </div>
+        <div class="submit">
+            <button id="submit" type="submit">enter</button>
+            <button id="cancel" type="reset">cancel</button>
+        </div>
+    </form>
+    </main>
+    <script type="text/javascript" src="../js/Login.js"></script>
+</body>
+</html>
